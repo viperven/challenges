@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>twitter lenght</title>
+</head>
+
+<body>
+    <h1>exercise for twitter lenght V84</h1>
+    <p id="tweetMsg"></p>
+    <p id="tweeLength"></p>
+    <p id="allowTweet"></p>
+
+    <SCript>
+        let tweetMsg = prompt("Enter Your Tweet");
+        let tweeLength = tweetMsg.length;
+        document.getElementById("tweetMsg").innerHTML= "your tweet is "+tweetMsg;
+        document.getElementById("tweeLength").innerHTML="you are left with "+ (226-tweeLength) + " characters tweet length";
+        document.getElementById("allowTweet").innerHTML="Your Allowed Tweet is "+tweetMsg.slice(0,227);
+    </SCript>
+</body>
+
+</html>

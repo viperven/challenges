@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>Who Will Buy The Lunch</h1>
+    <p id="display"></p>
+
+    <script>
+
+        // let names = ["rupesh", "aniket", "vidu", "saket", "maddy"];
+        // let whoWillPay = Math.floor(Math.random() * names.length);
+        // document.getElementById("display").innerHTML = names[whoWillPay] + " will buy the lunch for all";
+
+        var inputArray = [];
+        var size = 3; //Maximum Array size
+
+        for (var i = 0; i < size; i++) {
+
+            //Taking Input from user
+            inputArray[i] = prompt('Enter 3 Members Name To Select Who Will Pay The Bill ' + (i + 1));   
+        }
+        
+        let whoWillPay = Math.floor(Math.random() * inputArray.length);
+        document.getElementById("display").innerHTML = inputArray[whoWillPay] + " will buy the lunch for all";
+
+
+        console.log(inputArray);
+        
+    </script>
+
+</body>
+
+</html>

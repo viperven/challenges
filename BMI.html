@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <h1>Know Your Body Mass Index</h1>
+    <p id="display"></p>
+</head>
+
+<body>
+    <script>
+
+
+
+
+        function bmiCalculator(weight, height) {
+            let bmi = weight / (height * height);
+            if (bmi < 18.5) {
+                return bmi + " and you are underweight";
+            }
+            else if (bmi > 18.5 && bmi < 24.9) {
+                return bmi + " and you have a normal weight";
+            }
+            else if (bmi > 24.9) {
+                return bmi + "you are overweight";
+            }
+            else {
+                return "give inputs are wrong please refresh and try again";
+            }
+
+        } 4
+
+        let height = prompt("enter your height in meter");
+        let weight = prompt("enter your weight in kg");
+
+
+
+        document.getElementById("display").innerHTML = "your bmi is " + bmiCalculator(weight, height);;
+    </script>
+</body>
+
+</html>

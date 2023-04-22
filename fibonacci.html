@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacii Series</title>
+</head>
+<body>
+    <h1>fibonacii Series</h1>
+    <p id="display"></p>
+    <!-- 0 1 1 2 3 5 8 13 21 -->
+
+    <script>
+       let firstTerm = 0;
+       let secondTerm = 1;
+       let sum = 0;
+
+       console.log(firstTerm);
+       console.log(secondTerm); 
+     
+       for(i=2;i<10;i++)
+       {
+        sum = firstTerm+secondTerm;
+        console.log(sum);
+        firstTerm = secondTerm;
+        secondTerm = sum;
+       }
+     
+      
+    </script>
+</body>
+</html>
